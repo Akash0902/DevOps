@@ -1,0 +1,58 @@
+:root {
+  --bg: #0b1020;
+  --surface: #131a33;
+  --border: #25305a;
+  --text: #e8ecff;
+  --muted: #93a0c8;
+  --accent: #6ee7b7;
+  --accent2: #60a5fa;
+  --primary: #6366f1;
+  --danger: #ef4444;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: radial-gradient(1200px 600px at 80% -20%, rgba(99,102,241,.25), transparent), var(--bg);
+  color: var(--text); line-height: 1.6; min-height: 100vh;
+}
+.nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; border-bottom: 1px solid var(--border); backdrop-filter: blur(8px); position: sticky; top: 0; background: rgba(11,16,32,.85); z-index: 10; }
+.brand a { color: var(--text); text-decoration: none; font-weight: 700; font-size: 1.2rem; }
+.nav nav a { color: var(--muted); text-decoration: none; margin-left: 1.5rem; transition: color .2s; }
+.nav nav a:hover { color: var(--accent); }
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+footer { text-align: center; padding: 2rem; color: var(--muted); border-top: 1px solid var(--border); margin-top: 4rem; }
+.hero { text-align: center; padding: 4rem 1rem; }
+.hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin: 0 0 1rem; }
+.accent { background: linear-gradient(90deg, var(--accent), var(--accent2)); -webkit-background-clip: text; color: transparent; }
+.cta-row { display: flex; gap: 1rem; justify-content: center; margin-top: 2rem; flex-wrap: wrap; }
+.btn { display: inline-block; padding: .75rem 1.5rem; border-radius: 10px; font-weight: 600; text-decoration: none; cursor: pointer; border: none; font-size: 1rem; transition: transform .15s, box-shadow .15s; }
+.btn.primary { background: linear-gradient(135deg, var(--primary), var(--accent2)); color: #fff; }
+.btn.primary:hover { transform: translateY(-2px); box-shadow: 0 10px 30px -10px var(--primary); }
+.btn.ghost { background: transparent; border: 1px solid var(--border); color: var(--text); }
+.btn.ghost:hover { border-color: var(--accent); color: var(--accent); }
+.grid-3 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; margin-top: 2rem; }
+.grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 1.25rem; margin-top: 2rem; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 1.25rem; text-decoration: none; color: var(--text); transition: transform .15s, border-color .15s; display: block; }
+.card:hover { transform: translateY(-3px); border-color: var(--accent); }
+.card h3 { margin: .75rem 0 .5rem; }
+.card p { color: var(--muted); margin: 0; }
+.badge { display: inline-block; font-size: .7rem; padding: .25rem .6rem; border-radius: 999px; background: rgba(99,102,241,.2); color: var(--accent2); margin-right: .35rem; }
+.badge.done { background: rgba(110,231,183,.15); color: var(--accent); }
+.muted { color: var(--muted); }
+.video-wrap { position: relative; padding-top: 56.25%; margin: 1.5rem 0; border-radius: 14px; overflow: hidden; border: 1px solid var(--border); }
+.video-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; }
+.notes-list li { margin-bottom: .5rem; }
+.note-form textarea { width: 100%; padding: .75rem; border-radius: 10px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font-family: inherit; resize: vertical; }
+.note-form { margin: 1rem 0; }
+.user-note { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 1rem; margin: .5rem 0; }
+.user-note small { color: var(--muted); display: block; margin-top: .5rem; }
+.link-btn { background: none; border: none; color: var(--danger); cursor: pointer; padding: 0; font-size: .85rem; }
+.back { color: var(--muted); text-decoration: none; }
+.back:hover { color: var(--accent); }
+.flash { padding: .75rem 1rem; border-radius: 10px; margin-bottom: 1rem; background: rgba(110,231,183,.15); color: var(--accent); border: 1px solid var(--accent); }
+.quiz-q { margin: 1rem 0; }
+.opt { display: block; padding: .35rem 0; cursor: pointer; }
+.roadmap { line-height: 2; font-size: 1.05rem; }
+.roadmap li { padding-left: .5rem; }
+#result { margin-top: 2rem; }
