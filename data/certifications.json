@@ -1,0 +1,12 @@
+[
+  {"name": "AWS Certified Cloud Practitioner", "level": "Foundational", "vendor": "AWS", "url": "https://aws.amazon.com/certification/certified-cloud-practitioner/", "why": "Best entry point if you're new to cloud."},
+  {"name": "AWS Certified DevOps Engineer - Professional", "level": "Professional", "vendor": "AWS", "url": "https://aws.amazon.com/certification/certified-devops-engineer-professional/", "why": "Gold standard for AWS DevOps engineers."},
+  {"name": "Microsoft Certified: DevOps Engineer Expert (AZ-400)", "level": "Expert", "vendor": "Azure", "url": "https://learn.microsoft.com/en-us/credentials/certifications/devops-engineer/", "why": "Azure DevOps + GitHub end-to-end."},
+  {"name": "Google Cloud Professional DevOps Engineer", "level": "Professional", "vendor": "GCP", "url": "https://cloud.google.com/certification/cloud-devops-engineer", "why": "SRE-flavored cert for GCP."},
+  {"name": "Certified Kubernetes Administrator (CKA)", "level": "Professional", "vendor": "Linux Foundation / CNCF", "url": "https://www.cncf.io/certification/cka/", "why": "Hands-on K8s administration — highly respected."},
+  {"name": "Certified Kubernetes Application Developer (CKAD)", "level": "Professional", "vendor": "Linux Foundation / CNCF", "url": "https://www.cncf.io/certification/ckad/", "why": "For developers shipping apps on K8s."},
+  {"name": "Docker Certified Associate (DCA)", "level": "Associate", "vendor": "Docker", "url": "https://www.docker.com/certification/", "why": "Validates container expertise."},
+  {"name": "HashiCorp Certified: Terraform Associate", "level": "Associate", "vendor": "HashiCorp", "url": "https://www.hashicorp.com/certification/terraform-associate", "why": "The IaC certification everyone asks about."},
+  {"name": "Linux Foundation Certified System Administrator (LFCS)", "level": "Associate", "vendor": "Linux Foundation", "url": "https://www.cncf.io/certification/lfcs/", "why": "Strong Linux foundation for any DevOps role."},
+  {"name": "Certified Jenkins Engineer (CJE)", "level": "Associate", "vendor": "CloudBees", "url": "https://www.cloudbees.com/jenkins/jenkins-certification", "why": "If your shop runs Jenkins, this proves it."}
+]
