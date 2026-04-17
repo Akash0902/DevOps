@@ -1,0 +1,12 @@
+[
+  {"id": 1, "q": "What does CI stand for in CI/CD?", "options": ["Continuous Integration", "Container Initialization", "Code Inspection", "Cluster Indexing"], "answer": 0},
+  {"id": 2, "q": "Which command lists running containers?", "options": ["docker ls", "docker ps", "docker show", "docker list"], "answer": 1},
+  {"id": 3, "q": "Smallest deployable unit in Kubernetes?", "options": ["Container", "Pod", "Node", "Service"], "answer": 1},
+  {"id": 4, "q": "Which tool is for Infrastructure as Code (declarative)?", "options": ["Ansible", "Terraform", "Jenkins", "Prometheus"], "answer": 1},
+  {"id": 5, "q": "Which is a metrics + alerting toolkit?", "options": ["Grafana", "Prometheus", "Loki", "Jaeger"], "answer": 1},
+  {"id": 6, "q": "Where should secrets be stored?", "options": ["Inside Git", "In a .env committed", "Vault / Secrets Manager", "On the developer laptop"], "answer": 2},
+  {"id": 7, "q": "What does MTTR mean?", "options": ["Mean Time To Repair", "Maximum Test Time Ratio", "Mean Time To Release", "Multi-Tenant Traffic Routing"], "answer": 0},
+  {"id": 8, "q": "Best practice for Docker images?", "options": ["Use latest tag in prod", "Run as root", "Use small/distroless base images", "Bake secrets into image"], "answer": 2},
+  {"id": 9, "q": "GitOps tool?", "options": ["ArgoCD", "Nagios", "Splunk", "Bash"], "answer": 0},
+  {"id": 10, "q": "Which is NOT a DORA metric?", "options": ["Deployment frequency", "Lead time for changes", "Lines of code per day", "Change failure rate"], "answer": 2}
+]

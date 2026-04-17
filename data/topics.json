@@ -1,0 +1,153 @@
+[
+  {
+    "slug": "intro",
+    "title": "1. Introduction to DevOps",
+    "level": "Beginner",
+    "summary": "What DevOps is, why it matters, and the culture behind it.",
+    "video": "https://www.youtube.com/embed/0yWAtQ6wYNM",
+    "notes": [
+      "DevOps = Development + Operations: a culture and set of practices that unify software development and IT operations.",
+      "Goals: faster delivery, higher quality, better collaboration, automation everywhere.",
+      "Pillars: Culture, Automation, Lean, Measurement, Sharing (CALMS).",
+      "Key metrics: Lead time, Deployment frequency, MTTR, Change failure rate (DORA metrics)."
+    ]
+  },
+  {
+    "slug": "linux",
+    "title": "2. Linux Fundamentals",
+    "level": "Beginner",
+    "summary": "Shell, file system, permissions, processes, networking basics.",
+    "video": "https://www.youtube.com/embed/sWbUDq4S6Y8",
+    "notes": [
+      "Common commands: ls, cd, cp, mv, rm, grep, find, awk, sed, tar, ps, top, systemctl.",
+      "Permissions: chmod / chown, octal notation (rwx = 4+2+1).",
+      "Networking: ip a, ss, netstat, ping, curl, dig, traceroute.",
+      "Package managers: apt (Debian/Ubuntu), yum/dnf (RHEL/Fedora)."
+    ]
+  },
+  {
+    "slug": "scripting",
+    "title": "3. Shell & Python Scripting",
+    "level": "Beginner",
+    "summary": "Automate everything with Bash and Python.",
+    "video": "https://www.youtube.com/embed/tK9Oc6AEnR4",
+    "notes": [
+      "Bash: variables, loops, conditionals, functions, exit codes, set -euo pipefail.",
+      "Python: requests, subprocess, os, pathlib, argparse, logging.",
+      "Idempotency: scripts should be safe to run multiple times."
+    ]
+  },
+  {
+    "slug": "git",
+    "title": "4. Git & Version Control",
+    "level": "Beginner",
+    "summary": "Branches, merges, pull requests, GitFlow vs trunk-based.",
+    "video": "https://www.youtube.com/embed/RGOj5yH7evk",
+    "notes": [
+      "Core: init, clone, add, commit, push, pull, branch, merge, rebase, stash, log.",
+      "Workflows: GitFlow, GitHub Flow, Trunk-based development.",
+      "Pull request reviews, conventional commits, semantic versioning."
+    ]
+  },
+  {
+    "slug": "cicd",
+    "title": "5. CI/CD Pipelines",
+    "level": "Intermediate",
+    "summary": "Continuous Integration and Delivery with Jenkins, GitHub Actions, GitLab CI.",
+    "video": "https://www.youtube.com/embed/scEDHsr3APg",
+    "notes": [
+      "CI: every commit triggers build + tests automatically.",
+      "CD: every passing build is deployable (Continuous Delivery) or auto-deployed (Continuous Deployment).",
+      "Jenkinsfile (declarative pipeline) vs GitHub Actions (YAML) vs GitLab CI (.gitlab-ci.yml).",
+      "Stages: checkout → build → test → security scan → package → deploy."
+    ]
+  },
+  {
+    "slug": "docker",
+    "title": "6. Docker & Containers",
+    "level": "Intermediate",
+    "summary": "Build, ship, run anywhere with containers.",
+    "video": "https://www.youtube.com/embed/pg19Z8LL06w",
+    "notes": [
+      "Image vs container: image = blueprint, container = running instance.",
+      "Dockerfile basics: FROM, WORKDIR, COPY, RUN, EXPOSE, CMD, ENTRYPOINT.",
+      "docker compose up for multi-container apps (db + app + cache).",
+      "Best practices: multi-stage builds, small base images (alpine/distroless), .dockerignore."
+    ]
+  },
+  {
+    "slug": "kubernetes",
+    "title": "7. Kubernetes",
+    "level": "Advanced",
+    "summary": "Container orchestration at scale.",
+    "video": "https://www.youtube.com/embed/X48VuDVv0do",
+    "notes": [
+      "Core objects: Pod, Deployment, Service, ConfigMap, Secret, Ingress, Namespace.",
+      "kubectl get/describe/apply/logs/exec — your daily commands.",
+      "Helm = package manager for Kubernetes.",
+      "Probes: liveness, readiness, startup."
+    ]
+  },
+  {
+    "slug": "iac",
+    "title": "8. Infrastructure as Code (Terraform & Ansible)",
+    "level": "Intermediate",
+    "summary": "Declarative infrastructure with Terraform; configuration management with Ansible.",
+    "video": "https://www.youtube.com/embed/SLB_c_ayRMo",
+    "notes": [
+      "Terraform: providers, resources, state, modules, plan/apply/destroy.",
+      "Ansible: playbooks (YAML), inventory, roles, idempotent tasks (no agent needed).",
+      "Store state remotely (S3 + DynamoDB lock) for team work."
+    ]
+  },
+  {
+    "slug": "monitoring",
+    "title": "9. Monitoring & Observability",
+    "level": "Intermediate",
+    "summary": "Metrics, logs, traces — Prometheus, Grafana, ELK, Loki.",
+    "video": "https://www.youtube.com/embed/h4Sl21AKiDg",
+    "notes": [
+      "Three pillars: Metrics (Prometheus), Logs (Loki/ELK), Traces (Jaeger/Tempo).",
+      "Visualize with Grafana dashboards; alert with Alertmanager.",
+      "Define SLI / SLO / SLA. Track error budgets."
+    ]
+  },
+  {
+    "slug": "cloud",
+    "title": "10. Cloud Platforms (AWS / Azure / GCP)",
+    "level": "Intermediate",
+    "summary": "Core compute, storage, networking, IAM across the big three.",
+    "video": "https://www.youtube.com/embed/ulprqHHWlng",
+    "notes": [
+      "AWS: EC2, S3, IAM, VPC, RDS, EKS, Lambda, CloudWatch.",
+      "Azure: VMs, Blob, AAD, AKS, Functions, Monitor.",
+      "GCP: Compute Engine, Cloud Storage, IAM, GKE, Cloud Functions, Stackdriver."
+    ]
+  },
+  {
+    "slug": "security",
+    "title": "11. DevSecOps",
+    "level": "Advanced",
+    "summary": "Shift security left: SAST, DAST, SCA, secret scanning.",
+    "video": "https://www.youtube.com/embed/nrhxNNH5lt0",
+    "notes": [
+      "SAST: Static code analysis (SonarQube, Semgrep).",
+      "DAST: Runtime testing (OWASP ZAP).",
+      "SCA: Dependency vulnerability scanning (Snyk, Trivy).",
+      "Secrets in Vault / AWS Secrets Manager — never in git."
+    ]
+  },
+  {
+    "slug": "sre",
+    "title": "12. Site Reliability Engineering (SRE)",
+    "level": "Advanced",
+    "summary": "Google's discipline: reliability as a feature.",
+    "video": "https://www.youtube.com/embed/uTEL8Ff1Zvk",
+    "notes": [
+      "Toil reduction through automation (target < 50% toil).",
+      "Blameless postmortems after incidents.",
+      "Chaos engineering (Chaos Monkey, Gremlin) to test resilience.",
+      "On-call rotations and runbooks."
+    ]
+  }
+]
