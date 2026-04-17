@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Recommended Certifications</h1>
+<p class="muted">Curated path from foundational to expert-level DevOps certifications.</p>
+<div class="grid-2">
+  {% for c in certs %}
+  <div class="card">
+    <span class="badge">{{ c.level }}</span>
+    <h3>{{ c.name }}</h3>
+    <p><strong>Vendor:</strong> {{ c.vendor }}</p>
+    <p>{{ c.why }}</p>
+    <a class="btn ghost" href="{{ c.url }}" target="_blank" rel="noopener">Official page →</a>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

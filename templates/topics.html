@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>All Topics</h1>
+<p class="muted">12 topics, beginner → advanced.</p>
+<div class="grid-3">
+  {% for t in topics %}
+  <a class="card" href="{{ url_for('topic_detail', slug=t.slug) }}">
+    <span class="badge">{{ t.level }}</span>
+    {% if progress.get(t.slug) %}<span class="badge done">✓ Done</span>{% endif %}
+    <h3>{{ t.title }}</h3>
+    <p>{{ t.summary }}</p>
+  </a>
+  {% endfor %}
+</div>
+{% endblock %}

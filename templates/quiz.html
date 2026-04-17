@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>DevOps Quiz</h1>
+<p class="muted">Answer 10 questions to get a certification recommendation.</p>
+<form id="quiz-form">
+  {% for q in questions %}
+  <div class="card quiz-q">
+    <p><strong>{{ loop.index }}. {{ q.q }}</strong></p>
+    {% for opt in q.options %}
+    <label class="opt"><input type="radio" name="{{ q.id }}" value="{{ loop.index0 }}"> {{ opt }}</label>
+    {% endfor %}
+  </div>
+  {% endfor %}
+  <button type="submit" class="btn primary">Submit Quiz</button>
+</form>
+<div id="result"></div>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <h1>Master <span class="accent">DevOps</span> from Zero to Pro</h1>
+  <p>Video lessons, curated notes, hands-on quiz, and certification roadmap — all in one place.</p>
+  <div class="cta-row">
+    <a href="{{ url_for('topics_list') }}" class="btn primary">Start Learning</a>
+    <a href="{{ url_for('quiz') }}" class="btn ghost">Take the Quiz</a>
+  </div>
+</section>
+<section class="grid-3">
+  {% for t in topics[:6] %}
+  <a class="card" href="{{ url_for('topic_detail', slug=t.slug) }}">
+    <span class="badge">{{ t.level }}</span>
+    <h3>{{ t.title }}</h3>
+    <p>{{ t.summary }}</p>
+  </a>
+  {% endfor %}
+</section>
+{% endblock %}
