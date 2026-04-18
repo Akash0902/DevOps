@@ -17,7 +17,7 @@ spec:
         - name: nexus-secret
       containers:
         - name: devops-app
-          image: 3.108.66.213:8000/devops-app:latest
+          image: 3.108.66.213:8000/devops-app:18
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
