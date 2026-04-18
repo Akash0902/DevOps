@@ -2,8 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: devops-app
-  labels:
-    app: devops-app
+  namespace: devops
 spec:
   replicas: 2
   selector:
@@ -14,8 +13,11 @@ spec:
       labels:
         app: devops-app
     spec:
+      imagePullSecrets:
+        - name: nexus-secret
       containers:
         - name: devops-app
-          image: devops-app:latest   # overridden by kustomize
+          image: 3.108.66.213:8000/devops-app:latest
+          imagePullPolicy: Always
           ports:
-            - containerPort: 8000
+            - containerPort: 5000
